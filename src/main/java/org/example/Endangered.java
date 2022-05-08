@@ -4,7 +4,7 @@ import org.sql2o.Connection;
 
 import java.util.List;
 
-public class Endangered {
+public class Endangered implements Database {
 
     private String name;
     private String age;

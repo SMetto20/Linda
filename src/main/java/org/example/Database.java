@@ -1,6 +1,5 @@
 package org.example;
 
 public interface Database {
-    void save();
-
+    public void save();
 }

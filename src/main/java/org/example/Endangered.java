@@ -20,7 +20,7 @@ public String getName(){
 }
     public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO persons (name, age, health) VALUES (:name, :age : health)";
+            String sql = "INSERT INTO wildlife_test_database (name, age, health) VALUES (:name, :age : health)";
             con.createQuery(sql)
                     .addParameter("name", this.name)
                     .addParameter("age", this.age)

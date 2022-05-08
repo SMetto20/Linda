@@ -10,10 +10,11 @@ public class Endangered implements Database {
     private String age;
     private String health;
     private  String location;
-public Endangered(String name, String age, String health){
+public Endangered(String name, String age, String health, String location){
     this.name=name;
     this.age=age;
     this.health=health;
+    this.location=location;
 }
 
 public  String getName(){
@@ -31,7 +32,7 @@ public  String getName(){
         }
     }
     public static List<Endangered> all() {
-        String sql = "SELECT * FROM wildlife_test_database";
+        String sql = "SELECT * FROM animal";
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery(sql).executeAndFetch(Endangered.class);
         }

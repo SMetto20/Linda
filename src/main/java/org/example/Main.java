@@ -24,12 +24,12 @@ public class Main {
             age= request.queryParams("age");
             health =request.queryParams("health");
             location= request.queryParams("location");
-            Endangered animal = new Endangered (name,age,health);
+            Endangered animal = new Endangered (name,age,health,location);
             animal.save();
 
             Map<String, Object> model = new HashMap<String, Object>();
-            List myEndangeredArrayList = Endangered.all();
-            model.put("myEndangeredArrayList", myEndangeredArrayList);
+//            List myEndangeredArrayList = Endangered.all();
+//            model.put("myEndangeredArrayList", myEndangeredArrayList);
             model.put("animal",animal);
 
             return new ModelAndView(new HashMap(), "start.hbs");

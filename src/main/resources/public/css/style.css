@@ -449,7 +449,22 @@ height: 2446px;
 
 background: #141313;
 }
+.reported{
+position: absolute;
+width: 266px;
+height: 337px;
+left: 355px;
+top: 1047px;
 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 55px;
+line-height: 82px;
+
+color: #FFFFFF;
+
+}
 
 
 

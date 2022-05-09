@@ -465,6 +465,70 @@ line-height: 82px;
 color: #FFFFFF;
 
 }
+.andisp{
+position: absolute;
+width: 135px;
+height: 25px;
+left: 1093px;
+top: 1438px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 48px;
+
+color: #CA10AC;
+
+}
+.big{
+position: absolute;
+width: 128px;
+height: 30px;
+left: 1093px;
+top: 1497px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFFFF;}
+.area{
+position: absolute;
+width: 127px;
+height: 65px;
+left: 480px;
+top: 1597px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 48px;
+
+color: #CA10AC;
+}
+.cool{
+position: absolute;
+width: 175px;
+height: 30px;
+left: 480px;
+top: 1653px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFFFF;}
+
 
 
 

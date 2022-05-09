@@ -21,9 +21,9 @@ public class Main {
 
         get("/", (request, response) -> {
             name = request.queryParams("name");
-            age= request.queryParams("age");
+            age = request.queryParams("age");
             health =request.queryParams("health");
-            location= request.queryParams("location");
+            location = request.queryParams("location");
             Endangered animal = new Endangered (name,age,health,location);
             animal.save();
 

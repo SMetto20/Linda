@@ -13,6 +13,7 @@ public class Main {
     public static String health;
     public  static String location;
     public static String ranger;
+    public static String sighting;
     public static String all;
     public static void main(String[] args) {
         staticFileLocation("/public");
@@ -30,7 +31,6 @@ public class Main {
             health =request.queryParams("health");
             location = request.queryParams("location");
             ranger= request.queryParams("ranger");
-
             Endangered animal = new Endangered (name,age,health);
             animal.save();
 
@@ -40,11 +40,10 @@ public class Main {
             Map<String, Object> model = new HashMap<String, Object>();
 //            List myEndangeredArrayList = Endangered.all();
 //            model.put("myEndangeredArrayList", myEndangeredArrayList);
-            model.put("animal",animal);
             model.put("location",location);
             model.put("name",name);
 
-            return new ModelAndView(new HashMap(), "form.hbs");
+            return new ModelAndView(model, "form.hbs");
         }, new HandlebarsTemplateEngine());
 
     }

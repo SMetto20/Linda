@@ -7,14 +7,13 @@ import java.util.List;
 public class Endangered implements Database {
 
     private  String name;
-    private String age;
+    private  String age;
     private String health;
-    private  String location;
-public Endangered(String name, String age, String health, String location){
+public Endangered(String name, String age, String health ){
     this.name=name;
     this.age=age;
     this.health=health;
-    this.location=location;
+
 }
 
 public  String getName(){
@@ -22,12 +21,11 @@ public  String getName(){
 }
     public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animal (name, age, health, location ) VALUES (:name, :age, :health, :location)";
+            String sql = "INSERT INTO animal (name, age, health ) VALUES (:name, :age, :health)";
             con.createQuery(sql)
                     .addParameter("name", this.name)
                     .addParameter("age", this.age)
                     .addParameter("health", this.health)
-                    .addParameter("location", this.location)
                     .executeUpdate();
         }
     }
@@ -37,5 +35,7 @@ public  String getName(){
             return con.createQuery(sql).executeAndFetch(Sightngs.class);
         }
     }
-
+ public static final String healthy = "animal is of good health";
+    public static final String okay= "animal is not sick";
+    public static final String ill= "animal is sick";
 }

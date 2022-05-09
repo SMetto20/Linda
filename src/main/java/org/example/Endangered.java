@@ -31,10 +31,10 @@ public  String getName(){
                     .executeUpdate();
         }
     }
-    public static List<Endangered> all() {
-        String sql = "SELECT * FROM animal";
+    public static List<Sightngs> all() {
+        String sql = "SELECT * FROM sightings";
         try(Connection con = DB.sql2o.open()) {
-            return con.createQuery(sql).executeAndFetch(Endangered.class);
+            return con.createQuery(sql).executeAndFetch(Sightngs.class);
         }
     }
 

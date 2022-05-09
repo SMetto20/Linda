@@ -19,7 +19,7 @@ public class Main {
         Sql2o sql2o = new Sql2o(connectionString, "postgres", "123");
         get("/", (request, response) -> {
 
-            return new ModelAndView(new HashMap(), "home.hbs");
+            return new ModelAndView(new HashMap(), "start.hbs");
 
         }, new HandlebarsTemplateEngine());
 
@@ -36,7 +36,7 @@ public class Main {
 //            model.put("myEndangeredArrayList", myEndangeredArrayList);
             model.put("animal",animal);
 
-            return new ModelAndView(new HashMap(), "start.hbs");
+            return new ModelAndView(new HashMap(), "form.hbs");
         }, new HandlebarsTemplateEngine());
 
     }

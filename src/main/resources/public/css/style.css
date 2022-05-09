@@ -1,0 +1,455 @@
+*{
+padding:0%;
+margin:0%
+font-family:'poppins'
+}
+.black{
+position: relative;
+width: 1900px;
+height: 1300px;
+
+background: #141313;
+
+}
+.background{
+position: absolute;
+width: 1900px;
+height: 883px;
+left: 60px;
+top: 71px;
+
+background: url(lion7.jpg);
+
+}
+img{
+width:1780px;
+height:1000px;
+}
+.home{
+position: absolute;
+width: 69px;
+height: 36px;
+left: 289px;
+top: 103px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.about{
+position: absolute;
+width: 79px;
+height: 36px;
+left: 416px;
+top: 103px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.sightings{
+position: absolute;
+width: 124px;
+height: 36px;
+left: 537px;
+top: 103px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.welcome{
+position: absolute;
+width: 354px;
+height: 192px;
+left: 786px;
+top: 182px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 192px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.linda{
+position: absolute;
+width: 354px;
+height: 192px;
+left: 786px;
+top: 182px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 192px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+
+}
+.serve{
+position: absolute;
+width: 384px;
+height: 30px;
+left: 1116px;
+top: 330px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #CA10AC;
+
+}
+.questions{
+position: absolute;
+width: 308px;
+height: 24px;
+left: 1206px;
+top: 880px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.email{
+position: absolute;
+width: 206px;
+height: 24px;
+left: 1308px;
+top: 906px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.google{
+position: absolute;
+width: 155px;
+height: 24px;
+left: 1346px;
+top: 930px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.corporation{
+position: absolute;
+width: 202px;
+height: 30px;
+left: 1594px;
+top: 889px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #CA10AC;
+
+}
+.twentytwo{
+position: absolute;
+width: 48px;
+height: 30px;
+left: 1725px;
+top: 924px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #FFFEFE;
+
+}
+.overall{
+
+position: absolute;
+width: 1782px;
+height: 728px;
+left: 70px;
+top: 95px;
+
+background: #C4C4C4;}
+.bird{
+position: absolute;
+width: 986px;
+height: 729px;
+left: 840px;
+top: 20px;
+
+background: url(eagle.jpg);
+}
+.form{
+position: absolute;
+width: 796px;
+height: 728px;
+left: 40px;
+top: 20px;
+
+background: #FFFCFC;
+}
+.egimage{
+height:700px;
+width:920px;
+}
+.seen{
+position: absolute;
+width: 401px;
+height: 48px;
+left: 256px;
+top: 80px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.animal{
+position: absolute;
+width: 48px;
+height: 18px;
+left: 167px;
+top: 200px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+
+}
+.endangered{
+position: absolute;
+width: 221px;
+height: 18px;
+left: 512px;
+top: 266px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+}
+.name{
+position: absolute;
+width: 91px;
+height: 18px;
+left: 392px;
+top: 200px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+
+}
+.input1{
+position: absolute;
+width: 108px;
+height: 31px;
+left: 389px;
+top: 250px;
+
+background: #C4C4C4;
+}
+.age{
+position: absolute;
+width: 29px;
+height: 18px;
+left: 384px;
+top: 300px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+}
+.input2{
+position: absolute;
+width: 130px;
+height: 29px;
+left: 387px;
+top: 330px;
+
+background: #C4C4C4;
+}
+.health{
+position: absolute;
+width: 47px;
+height: 18px;
+left: 408px;
+top: 380px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+}
+.input3{
+position: absolute;
+width: 123px;
+height: 33px;
+left: 384px;
+top: 410px;
+
+background: #C4C4C4;
+}
+.location{
+position: absolute;
+width: 75px;
+height: 24px;
+left: 400px;
+top: 480px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.input4{
+position: absolute;
+width: 155px;
+height: 33px;
+left: 360px;
+top: 510px;
+
+background: #C4C4C4;
+}
+.ranger{
+position: absolute;
+width: 125px;
+height: 24px;
+left: 371px;
+top: 570px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.input5{
+position: absolute;
+width: 120px;
+height: 30px;
+left: 371px;
+top: 600px;
+
+background: #C4C4C4;
+}
+.submit{
+position: absolute;
+width: 190px;
+height: 39px;
+left: 357px;
+top: 660px;
+
+background: #171616;
+color:white;
+}
+.black2{
+position: relative;
+width: 1900px;
+height: 2446px;
+
+background: #141313;
+}
+
+
+
+

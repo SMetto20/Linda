@@ -10,31 +10,37 @@
 </head>
 
 <body>
+{{#partial "nav"}}
+    <div class="nav">
 
-<form action ="/" >
-    <p class="new">Create a new hero</p>
-    <div>
-        <label for="name" class="enter"> animals name </label>
-        <input type="text" id="name" name = "name" class="input1">
+        <p class="home">Home</p>
+        <p class="about">ABOUT</p>
+        <p class="sightings"> SIGHTINGS</p>
     </div>
-    <div>
-        <label for="age" class="age">Their age</label>
-        <input type="text" id="age" name="age" class="input2">
+{{/partial}}
+{{#partial "content"}}
+    <p class="welcome">Welcome to</p>
+    <p class="linda">LINDA</p>
+    <p class="Serve">Here to serve and protect our wildlife</p>
+
+    <form action="/form">
+        <button class="started" >Get started</button>
+    </form>
+    <img src="/images/lion7.jpg" alt="" class="lion">
+    <div class="cream">
 
     </div>
-    <div>
-        <label for="location" class="age">Their location</label>
-        <input type="text" id="location" name="location" class="input2">
+    <p class="questions">If you have any questions or concerns</p>
+    <p class="email">regarding sightings, email</p>
+    <p class="google">linda@google.com</p>
+    <p class="corporation">LINDA CORPORATION</p>
+    <p class="2022">2022</p>
 
-    </div>
-    <div>
-        <label for="health" class="age">Their health </label>
-        <input type="text" id="health" name="health" class="input2">
-        <button>Submit</button>
-    </div>
-
-</form>
-
+{{/partial}}
+<div class="footer">
+</div>
 </body>
 
 </html>
+{{> layout.hbs}}
+

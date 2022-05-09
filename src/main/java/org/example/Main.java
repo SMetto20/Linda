@@ -17,9 +17,13 @@ public class Main {
         staticFileLocation("/public");
         String connectionString = "jdbc:postgresql://localhost:5432/wildlife_tracker_test";
         Sql2o sql2o = new Sql2o(connectionString, "postgres", "123");
-
-
         get("/", (request, response) -> {
+
+            return new ModelAndView(new HashMap(), "home.hbs");
+
+        }, new HandlebarsTemplateEngine());
+
+        get("/form", (request, response) -> {
             name = request.queryParams("name");
             age = request.queryParams("age");
             health =request.queryParams("health");
@@ -34,6 +38,7 @@ public class Main {
 
             return new ModelAndView(new HashMap(), "start.hbs");
         }, new HandlebarsTemplateEngine());
+
     }
 
 }

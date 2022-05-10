@@ -52,6 +52,7 @@ public class Main {
             seen.save2();
 
 
+
             Map<String,Object> model = new HashMap<String, Object>();
 //            List myEndangeredArrayList = Endangered.all();
 //            model.put("myEndangeredArrayList", myEndangeredArrayList);
@@ -66,7 +67,18 @@ public class Main {
 
             return new ModelAndView(model, "form.hbs");
         }, new HandlebarsTemplateEngine());
+        try{
+            if(name == "");
 
+        }catch (NullPointerException exception) {
+            System.out.println("type required");
+        }
+        try{
+            if(ranger == "");
+
+        }catch (NullPointerException exception) {
+            System.out.println("type required");
+        }
     }
 
 }

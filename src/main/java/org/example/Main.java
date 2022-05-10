@@ -51,7 +51,8 @@ public class Main {
             Sightngs seen = new Sightngs(location, ranger);
             seen.save2();
 
-
+            Date newDate = new Date();
+            String date = newDate.toString();
 
             Map<String,Object> model = new HashMap<String, Object>();
 //            List myEndangeredArrayList = Endangered.all();
@@ -63,6 +64,7 @@ public class Main {
             model.put("age",age);
             model.put("ranger",ranger);
             model.put("endangered", endangered);
+            model.put("date",date);
 //            model.put("sightedAnimals",sightedAnimals);
 
             return new ModelAndView(model, "form.hbs");
@@ -72,6 +74,7 @@ public class Main {
 
         }catch (NullPointerException exception) {
             System.out.println("type required");
+
         }
         try{
             if(ranger == "");

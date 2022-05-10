@@ -24,27 +24,50 @@
         <label for="name" class="name">  Animal name </label>
         <input type="text" id="name" name="name" class="input1">
     </div>
+    {{#if endangered}}
     <div>
-        <label for="age" class="age"> age </label>
+        <label for="age" class="age"> age</label>
         <input type="text" id="age" name="age" class="input2">
 
     </div>
+        <div>
+            <label for="health" class="health"> health</label>
+            <input type="text" id="health" name="health" class="input3">
+
+        </div>
+        <div>
+            <label for="location" class="location"> location</label>
+            <input type="text" id="location" name="location" class="input4">
+
+        </div>
+
+        <div>
+            <label for="ranger" class="ranger"> Ranger </label>
+            <input type="text" id="ranger" name="ranger" class="input5">
+        </div>
+        <button class="submit">Submit</button>
+    {{else}}
     <div>
         <label for="location" class="location"> location</label>
         <input type="text" id="location" name="location" class="input4">
 
     </div>
-    <div>
-        <label for="health" class="health"> health </label>
-        <input type="text" id="health" name="health" class="input3">
 
-    </div>
 <div>
     <label for="ranger" class="ranger"> Ranger </label>
     <input type="text" id="ranger" name="ranger" class="input5">
 </div>
+    <div>
+        <label for="endangered" class="endangered2"> is the animal endangered </label>
+        <input type="text" id="endangered" name="endangered" class="input6">
+    </div>
+    <button class="submit2">Submit</button>
     <button class="submit">Submit</button>
 </form>
+{{/if}}
+        {{#each sightedAnimals}}
+            <p>{{ranger}}</p>
+{{/each}}
     </div>
 </div>
     <p class="reported">The <br> reported<br> sightings <br> include;</p>

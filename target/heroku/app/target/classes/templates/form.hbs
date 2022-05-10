@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="black2">
+<div class="overall">
+    <div class="bird">
+        <img src="/images/eagle.jpeg" alt="" class="egimage">
+    </div>
+    <div class="form">
+<form action ="/form" >
+    <p class="seen">have you seen anything</p>
+<!--    <p class="animal">Animal</p>-->
+<!--    <p class="endangered">Only fill if it is endangered</p>-->
+    <div>
+        <label for="name" class="name">  Animal name </label>
+        <input type="text" id="name" name="name" class="input1">
+    </div>
+    <div>
+        <label for="age" class="age"> age </label>
+        <input type="text" id="age" name="age" class="input2">
+
+    </div>
+    <div>
+        <label for="location" class="location"> location</label>
+        <input type="text" id="location" name="location" class="input4">
+
+    </div>
+    <div>
+        <label for="health" class="health"> health </label>
+        <input type="text" id="health" name="health" class="input3">
+
+    </div>
+<div>
+    <label for="ranger" class="ranger"> Ranger </label>
+    <input type="text" id="ranger" name="ranger" class="input5">
+</div>
+    <div>
+        <label for="date" class="ranger"> Ranger </label>
+        <input type="text" id="date" name="date" class="input6">
+    </div>
+    <button class="submit">Submit</button>
+</form>
+    </div>
+</div>
+    <p class="reported">The <br> reported<br> sightings <br> include;</p>
+    <p class="andisp">Animal</p>
+    <p class="big">  name : {{name}}  health: {{health}} age: {{age}}</p>
+    <p class="area">Area</p>
+    <p class="cool">the location is {{location}}</p>
+    <p class="by">sighted by </p>
+    <p clss="range">{{ranger}}</p>
+</div>
+</body>
+
+</html>

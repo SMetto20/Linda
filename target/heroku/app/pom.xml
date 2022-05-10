@@ -65,7 +65,7 @@
                     <archive>
                         <!-- Change this to YOUR main class name if different. Usually, it will be App. -->
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>org.example.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

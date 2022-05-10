@@ -528,7 +528,41 @@ line-height: 30px;
 
 
 color: #FFFFFF;}
+.by{
+position: absolute;
+width: 171px;
+height: 48px;
+left: 1093px;
+top: 1703px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
 
 
+color: #CA10AC;
+
+}
+.range{
+position: absolute;
+width: 76px;
+height: 36px;
+left: 1141px;
+top: 1764px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
 
 

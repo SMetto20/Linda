@@ -42,6 +42,9 @@ public class Main {
 //            model.put("myEndangeredArrayList", myEndangeredArrayList);
             model.put("location",location);
             model.put("name",name);
+            model.put("health",health);
+            model.put("age",age);
+            model.put("ranger",ranger);
 
             return new ModelAndView(model, "form.hbs");
         }, new HandlebarsTemplateEngine());

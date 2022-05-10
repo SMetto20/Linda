@@ -2,9 +2,6 @@ package org.example;
 
 import org.sql2o.Connection;
 
-import java.security.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.List;
 
 import static java.time.LocalTime.now;
@@ -32,6 +29,12 @@ public class Sightngs {
     }
 
     public static List<Sightngs> all() {
+        String sql = "SELECT * FROM sightings";
+        try (Connection con = DB.sql2o.open()) {
+            return con.createQuery(sql).executeAndFetch(Sightngs.class);
+        }
+    }
+    public static List<Sightngs> checkl() {
         String sql = "SELECT * FROM sightings";
         try (Connection con = DB.sql2o.open()) {
             return con.createQuery(sql).executeAndFetch(Sightngs.class);

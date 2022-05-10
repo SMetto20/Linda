@@ -228,7 +228,7 @@ color: #FFFEFE;
 
 position: absolute;
 width: 1782px;
-height: 728px;
+height: 800px;
 left: 70px;
 top: 95px;
 
@@ -260,7 +260,7 @@ position: absolute;
 width: 401px;
 height: 48px;
 left: 256px;
-top: 80px;
+top: 30px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -311,7 +311,7 @@ position: absolute;
 width: 91px;
 height: 18px;
 left: 392px;
-top: 200px;
+top: 220px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -331,6 +331,8 @@ left: 389px;
 top: 250px;
 
 background: #C4C4C4;
+border:none;
+border-radius:8px;
 }
 .age{
 position: absolute;
@@ -350,11 +352,12 @@ color: #000000;
 }
 .input2{
 position: absolute;
-width: 130px;
-height: 29px;
+width: 108px;
+height: 31px;
 left: 387px;
 top: 330px;
-
+border:none;
+border-radius:8px;
 background: #C4C4C4;
 }
 .health{
@@ -375,11 +378,12 @@ color: #000000;
 }
 .input3{
 position: absolute;
-width: 123px;
-height: 33px;
+width: 108px;
+height: 31px;
 left: 384px;
 top: 410px;
-
+border:none;
+border-radius:8px;
 background: #C4C4C4;
 }
 .location{
@@ -400,18 +404,19 @@ color: #000000;
 }
 .input4{
 position: absolute;
-width: 155px;
-height: 33px;
-left: 360px;
+width: 108px;
+height: 31px;
+left: 390px;
 top: 510px;
-
+border:none;
+border-radius:8px;
 background: #C4C4C4;
 }
 .ranger{
 position: absolute;
 width: 125px;
 height: 24px;
-left: 371px;
+left:400px;
 top: 570px;
 
 font-family: 'Inter';
@@ -425,12 +430,14 @@ color: #000000;
 }
 .input5{
 position: absolute;
-width: 120px;
-height: 30px;
-left: 371px;
+width: 108px;
+height: 31px;
+left: 390px;
 top: 600px;
 
 background: #C4C4C4;
+border:none;
+border-radius:8px;
 }
 .submit{
 position: absolute;
@@ -563,6 +570,41 @@ line-height: 36px;
 
 color: #FFFFFF;
 
+}
+.endangered2{position: absolute;
+left:350px;
+top:130px;}
+
+.input6{
+position:absolute;
+top :150px;
+left:390px;
+background: #C4C4C4;
+border:none;
+border-radius:8px;
+width: 108px;
+height: 31px;
+}
+.submit2{
+position:absolute;
+top :200px;
+left:410px;
+border:none;
+border-radius: 5px;
+background-color:black;
+color:white;
+width:70px;
+}
+.getstarted{
+position:absolute;
+left:950px;
+top:530px;
+border:none;
+border-radius: 5px;
+background-color:black;
+color:white;
+width:90px;
+height:30px;
 }
 
 

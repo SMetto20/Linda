@@ -10,7 +10,12 @@
 </head>
 
 <body>
+{{#partial "nav"}}
+
+{{/partial}}
+
 <div class="black2">
+{{#partial "content"}}
 <div class="overall">
     <div class="bird">
         <img src="/images/eagle.jpeg" alt="" class="egimage">
@@ -76,8 +81,10 @@
     <p class="area">Area</p>
     <p class="cool">the location is {{location}}</p>
     <p class="by">sighted by </p>
-    <p clss="range">{{ranger}}</p>
+    <p class="range">{{ranger}} </p>
 </div>
+{{/partial}}
 </body>
 
 </html>
+{{> layout.hbs}}

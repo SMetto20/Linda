@@ -6,8 +6,8 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 import java.security.Timestamp;
 import java.util.*;
 
-import static spark.Spark.get;
-import static spark.Spark.staticFileLocation;
+import static spark.Spark.*;
+
 public class Main {
     public int id;
     public static String name;
@@ -18,7 +18,16 @@ public class Main {
     public static String endangered;
     public static Timestamp sighting;
     public static String all;
+
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
     public static void main(String[] args) {
+        port(getHerokuAssignedPort());
         staticFileLocation("/public");
         String connectionString = "jdbc:postgresql://localhost:5432/wildlife_tracker";
         Sql2o sql2o = new Sql2o(connectionString, "postgres", "123");

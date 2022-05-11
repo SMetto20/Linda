@@ -82,6 +82,12 @@
     <p class="cool">the location is {{location}}</p>
     <p class="by">sighted by </p>
     <p class="range">{{ranger}} </p>
+    <p class="time">Time of report</p>
+    {{#if ranger}}
+        <p class="date">{{date}}</p>
+    {{else}}
+    {{/if}}
+
 </div>
 {{/partial}}
 </body>

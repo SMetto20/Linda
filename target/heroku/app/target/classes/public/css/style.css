@@ -120,8 +120,8 @@ color: #FFFFFF;
 position: absolute;
 width: 384px;
 height: 30px;
-left: 1116px;
-top: 330px;
+left: 1180px;
+top: 370px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -210,8 +210,8 @@ color: #CA10AC;
 position: absolute;
 width: 48px;
 height: 30px;
-left: 1725px;
-top: 924px;
+left: 1620px;
+top: 950px;
 
 font-family: 'Poppins';
 font-style: normal;
@@ -606,5 +606,23 @@ color:white;
 width:90px;
 height:30px;
 }
+.date{position:absolute;
+top:1900px;
+color:white;
+left:480px;
+}
+.time{
+position:absolute;
+top:1800px;
+left:500px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
 
 
+color: #CA10AC;
+
+}

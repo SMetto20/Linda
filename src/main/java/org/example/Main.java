@@ -26,11 +26,13 @@ public class Main {
         }
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
+
     public static void main(String[] args) {
+
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
-        String connectionString = "jdbc:postgresql://localhost:5432/wildlife_tracker";
-        Sql2o sql2o = new Sql2o(connectionString, "postgres", "123");
+        String connectionString = "jdbc:postgresql://ec2-34-236-94-53.compute-1.amazonaws.com:5432/dd556npq3t4siq";
+        Sql2o sql2o = new Sql2o(connectionString, "lkzxmggrqevbct", "1d9585f5337694a7c6ad3b0a07c4c8c1a71aee360d40d27dbcd94bb0589a11a6");
         get("/", (request, response) -> {
 
             return new ModelAndView(new HashMap(), "start.hbs");
@@ -53,7 +55,7 @@ public class Main {
 
             Date newDate = new Date();
             String date = newDate.toString();
-
+//
             Map<String,Object> model = new HashMap<String, Object>();
 //            List myEndangeredArrayList = Endangered.all();
 //            model.put("myEndangeredArrayList", myEndangeredArrayList);
